@@ -1,0 +1,38 @@
+# either  `"emacs"` (default) or `"vi"`.
+options(radian.editing_mode = "vi")
+
+# indent continuation lines
+# turn this off if you want to copy code without the extra indentation;
+# but it leads to less elegant layout
+options(radian.indent_lines = TRUE)
+
+# auto match brackets and quotes
+options(radian.auto_match = TRUE)
+
+# highlight matching bracket
+options(radian.highlight_matching_bracket = TRUE)
+
+# pop up completion while typing
+options(radian.complete_while_typing = TRUE)
+# the minimum length of prefix to trigger auto completions
+options(radian.completion_prefix_length = 2)
+# timeout in seconds to cancel completion if it takes too long
+# set it to 0 to disable it
+options(radian.completion_timeout = 0.05)
+# add spaces around equals in function argument completion
+options(radian.completion_adding_spaces_around_equals = TRUE)
+
+# insert new line between prompts
+options(radian.insert_new_line = FALSE)
+
+# show vi mode state when radian.editing_mode is `vi`
+options(radian.show_vi_mode_prompt = TRUE)
+options(radian.vi_mode_prompt = "\033[0;34m[{}]\033[0m ")
+
+# allows user defined shortcuts, these keys should be escaped when send through the terminal.
+# In the following example, `esc` + `-` sends `<-` and `esc` + `m` sends `%>%`.
+# Note that in some terminals, you could mark `alt` as `escape` so you could use `alt` + `-` instead.
+options(radian.escape_key_map = list(
+    list(key = "-", value = " <- "),
+    list(key = "m", value = " %>% ")
+))
