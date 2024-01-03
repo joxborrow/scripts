@@ -1,9 +1,10 @@
 #! /usr/bin/env python
 
+
 import os
 from optparse import OptionParser
 
-# Parse all of the commandline options
+# Parse all of the command line options
 parser = OptionParser()
 parser.add_option("-d", "--directory", 
                   dest="root_dir",
@@ -12,7 +13,7 @@ parser.add_option("-d", "--directory",
 parser.add_option("-r", "--dry-run",
                   action = "store_true",
                   default = False,
-                  help = "Prints all file names to the console, instead of deleteing them.",
+                  help = "Prints all file names to the console, instead of deleting them.",
                   dest="dry_run")
 
 (options, args) = parser.parse_args()

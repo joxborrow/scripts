@@ -4,9 +4,10 @@ This is a small repository for some utility scripts and experimentation in vario
 
 Index:
 
-
-| Script          | Language | Description                                                                      | State       |
-| ----------------- | ---------- | ---------------------------------------------------------------------------------- | ------------- |
-| delete_files.sh | Python   | Recursively delete all files in a directory and<br />all of its sub directories. | Incompelete |
-| delete_files.jl | Julia    | Recursively delete all files in a directory and<br />all of its sub directories. | Incomplete  |
-| add_title.py | Python | Add a short title sequence to the beginning of a video. | Incomplete |
+| Script          | Language | Description                                                                      | State      |
+|-----------|-----------|---------------------------------------|-----------|
+| delete_files.sh | Python   | Recursively delete all files in a directory and<br />all of its sub directories. | Complete   |
+| delete_files.jl | Julia    | Recursively delete all files in a directory and<br />all of its sub directories. | Incomplete |
+| add_title.py    | Python   | Add a short title sequence to the beginning of a video.                          | Incomplete |
+| start_onedriver | bash     | Utility script to start the onedriver daemon                                     | Complete   |
+| .radian_profile | ---      | Profile for the Radian R interpreter                                             | Complete   |
